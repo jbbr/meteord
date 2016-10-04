@@ -1,5 +1,6 @@
 #FROM meteorhacks/meteord:base
-FROM registry.git.artos-hosting.de/janek/meteord
+#FROM registry.git.artos-hosting.de/janek/meteord
+FROM jbbr/meteord:base
 MAINTAINER Janek Thomaschewski
 
 ONBUILD RUN bash $METEORD_DIR/lib/install_meteor.sh
