@@ -9,7 +9,7 @@ cp -R /app $COPIED_APP_PATH
 cd $COPIED_APP_PATH
 
 npm i
-meteor build --directory $BUNDLE_DIR --server=http://localhost:3000
+meteor build --unsafe-perm --directory $BUNDLE_DIR --server=http://localhost:3000
 
 cd $BUNDLE_DIR/bundle/programs/server/
 npm i
